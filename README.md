@@ -1,4 +1,4 @@
-# nodejs-currency-quote-api
+# currency-quote-api
 
 <h3>API desenvolvida para realizar a conversão de moedas, utilizando cryptocompare para taxa de câmbio, desenvolvido em NodeJs</h3>
 
@@ -36,8 +36,8 @@
 <hr>
 <h4>Utilização da API:</h4>
 
-- git clone `https://github.com/raphael-ferreira/nodejs-currency-quote-api.git`
-- cd `nodejs-currency-quote-api`
+- git clone `https://github.com/raphael-ferreira/currency-quote-api.git`
+- cd `currency-quote-api`
 - npm i
 - npm start
 
