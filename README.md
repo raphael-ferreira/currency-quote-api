@@ -1,13 +1,13 @@
 # nodejs-currency-quote-api
 
-<h3>Projeto desenvolvido em NodeJS</h3>
+<h3>API desenvolvida para realizar a conversão de moedas, utilizando cryptocompare para taxa de câmbio, desenvolvido em NodeJs</h3>
 
 <h4>Conteúdo do projeto</h4>
 
 - <b>Dois endpoints:</b> Currency e Quote.
 
-- `/currency` responsável por realizar os métodos CRUD, para as moedas suportadas pela API.
-- `/quote` responsável por realizar a conversão entre duas moedas, com ambos os dados passados via parâmetro na URL. Exemplo: `?from=BRL&to=CAD&amount=10` 
+- `/currency` responsável pelo CRUD das moedas suportadas pela API.
+- `/quote` responsável por realizar a conversão entre duas moedas.
 
 - Processo separado em models, controllers e routes para ambos os endpoints.
 
@@ -15,12 +15,9 @@
 
 - Adicionado tratamento para não permitir inserção de moedas duplicadas.
 
-- Porta teste utilizada: `3001`.
-
 - Evidências de testes disponíveis na pasta <b>tests</b>.
 
 - <b>Framework utilizado:</b> Express.
-- <b>Ferramentas utilizadas:</b> Visual Studio Code e Postman.
 
 <hr>
 
@@ -28,31 +25,21 @@
 
 <h5>Método GET:</h5>
 
-- Listagem de moedas: 
-######
-https://localhost:3001/currency
-- Consulta de planos por código: 
-######
-https://localhost:3001/currency/USD
-- Conversão de BRL para CAD, quantidade 10: 
-######
-https://localhost:3001/quote?from=BRL&to=CAD&amount=10
->"USD", "BRL", "CAD" e 10 passados por parâmetro.
+- Listagem de moedas: `/currency`
+- Consulta de planos por código: `/currency/:code`
+- Conversão de moedas: `/quote?from=BRL&to=CAD&amount=10`
 
 <h5>Métodos POST e DELETE:</h5>
 
-- Para cadastro e exclusão: 
-######
-https://localhost:3001/currency/BRL
-> BRL passado por parâmetro.
+- Para cadastro e exclusão: `/currency/:code`
 
 <hr>
 <h4>Utilização da API:</h4>
 
-- git clone `https://github.com/raphael-ferreira/challenge-bravo.git`
-- cd `caminho do projeto`
+- git clone `https://github.com/raphael-ferreira/nodejs-currency-quote-api.git`
+- cd `nodejs-currency-quote-api`
 - npm i
 - npm start
 
 <hr>
-> Desenvolvido por: Raphael D. Ferreira - 08/2019
+> Desenvolvido por: Raphael D. Ferreira
